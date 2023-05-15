@@ -50,14 +50,14 @@ if(isset($_POST['add_to_cart'])){
 <?php include 'header.php'; ?>
 
 <section class="home">
-
-   <div class="content">
+      <div class="content">
       <h3>Hand Picked Book to your door.</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quod? Reiciendis ut porro iste totam.</p>
+      <p>A book is a gift you can open again and again.</p>
       <a href="about.php" class="white-btn">discover more</a>
    </div>
 
 </section>
+
 
 <section class="products">
 
@@ -73,8 +73,8 @@ if(isset($_POST['add_to_cart'])){
      <form action="" method="post" class="box">
       <img class="image" src="uploaded_img/<?php echo $fetch_products['image']; ?>" alt="">
       <div class="name"><?php echo $fetch_products['name']; ?></div>
-      <div class="price">$<?php echo $fetch_products['price']; ?>/-</div>
-      <input type="number" min="1" name="product_quantity" value="1" class="qty">
+      <div class="price">Rs.<?php echo $fetch_products['price']; ?>/-</div>
+      <input type="number" min="1" name="product_quantity" value="0" class="qty">
       <input type="hidden" name="product_name" value="<?php echo $fetch_products['name']; ?>">
       <input type="hidden" name="product_price" value="<?php echo $fetch_products['price']; ?>">
       <input type="hidden" name="product_image" value="<?php echo $fetch_products['image']; ?>">
@@ -99,12 +99,12 @@ if(isset($_POST['add_to_cart'])){
    <div class="flex">
 
       <div class="image">
-         <img src="images/about-img.jpg" alt="">
+         <img src="images/About1.jpg" alt="">
       </div>
 
       <div class="content">
          <h3>about us</h3>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quos enim minima ipsa dicta officia corporis ratione saepe sed adipisci?</p>
+         <p>We offer a tremendous gathering of books in the various classifications of Fiction, Non-fiction, Biographies, History, Religions, Self–Help, and Children.</p>
          <a href="about.php" class="btn">read more</a>
       </div>
 
@@ -116,7 +116,7 @@ if(isset($_POST['add_to_cart'])){
 
    <div class="content">
       <h3>have any questions?</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque cumque exercitationem repellendus, amet ullam voluptatibus?</p>
+      <p>Solve your questions on one click.</p>
       <a href="contact.php" class="white-btn">contact us</a>
    </div>
 
